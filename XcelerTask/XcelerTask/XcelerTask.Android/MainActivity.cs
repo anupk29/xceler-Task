@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ImageCircle.Forms.Plugin.Droid;
+using XcelerTask.Droid.Renderer;
 
 namespace XcelerTask.Droid
 {
@@ -21,6 +23,9 @@ namespace XcelerTask.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+
+            ImageCircleRenderer.Init();
+            FloatingActionButtonRenderer.InitControl();
         }
     }
 }
